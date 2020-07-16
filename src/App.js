@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './global/tailwind.css';
 
+import 'typeface-inter'
+
 function App() {
   return (
     <div className="App">
