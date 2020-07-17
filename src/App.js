@@ -1,9 +1,10 @@
 import React from 'react'
-import Header from './header'
-import Body from './body'
-import Tab from './tab'
-import TabRow from './tabrow'
-import FileManager from './file-manager'
+import Header from './app-chrome/header'
+import Body from './app-chrome/body'
+import Tab from './app-chrome/tab'
+import TabRow from './app-chrome/tabrow'
+import FileManager from './features/files/file-manager'
+import Wrapper from './features/simulator/wrapper'
 import './global/tailwind.css'
 
 import 'typeface-inter'
@@ -18,6 +19,7 @@ function App() {
       </TabRow>
       <Body>
         <FileManager></FileManager>
+        <Wrapper></Wrapper>
       </Body>
     </div>
   )

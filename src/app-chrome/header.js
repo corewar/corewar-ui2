@@ -1,5 +1,5 @@
 import React from 'react'
-import { ReactComponent as Logo } from './img/logo.svg'
+import { ReactComponent as Logo } from '../img/logo.svg'
 
 const Header = () => (
   <header className="w-full h-16">
