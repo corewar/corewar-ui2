@@ -14,6 +14,7 @@
     "react-redux": "^7.2.0",
     "react-scripts": "3.4.1",
     "tailwindcss": "^1.5.1",
+    "typeface-anonymous-pro": "0.0.72",
     "typeface-inter": "^3.12.0"
   },
   "scripts": {
