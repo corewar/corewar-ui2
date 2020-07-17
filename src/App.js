@@ -1,28 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './global/tailwind.css';
+import React from 'react'
+import Header from './header'
+import Body from './body'
+import Tab from './tab'
+import TabRow from './tabrow'
+import FileManager from './file-manager'
+import './global/tailwind.css'
 
 import 'typeface-inter'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className="text-red-500 font-body">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg-gray-900 w-full min-h-screen flex flex-col p-2">
+      <Header></Header>
+      <TabRow>
+        <Tab active>Editor</Tab>
+        <Tab>Player</Tab>
+      </TabRow>
+      <Body>
+        <FileManager></FileManager>
+      </Body>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

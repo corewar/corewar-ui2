@@ -6,8 +6,8 @@ module.exports = {
       body: ['Inter'],
       code: ['Anonymous Pro']
     },
-    extend: {},
+    extend: {}
   },
   variants: {},
-  plugins: [],
+  plugins: []
 }
