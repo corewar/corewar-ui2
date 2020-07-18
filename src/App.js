@@ -8,10 +8,11 @@ import Wrapper from './features/simulator/wrapper'
 import './global/tailwind.css'
 
 import 'typeface-inter'
+import 'typeface-anonymous-pro'
 
 function App() {
   return (
-    <div className="App bg-gray-900 w-full min-h-screen flex flex-col p-2">
+    <div className="App bg-gray-900 w-full min-h-screen flex flex-col p-2 font-body text-gray-100">
       <Header></Header>
       <TabRow>
         <Tab active>Editor</Tab>

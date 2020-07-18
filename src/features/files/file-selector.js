@@ -7,12 +7,12 @@ const files = [
 
 const File = ({ file }) => (
   <li
-    className={`h-12 flex flex-row items-center text-gray-100 rounded-l-full text-sm px-2 ${
+    className={`h-12 flex flex-row items-center text-gray-100 rounded-l-full text-xs px-2 ${
       file.active && 'bg-gray-700 '
     }`}
   >
     <div className="w-8 h-8">{file.icon}</div>
-    <span className="flex-1 text-sm">{file.name}</span>
+    <span className="flex-1">{file.name}</span>
     <input type="checkbox"></input>
   </li>
 )
