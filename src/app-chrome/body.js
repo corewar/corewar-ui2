@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Body = ({ children }) => (
-  <section className="flex flex-1 bg-gray-800 border-gray-700 border rounded rounded-tl-none py-2">
+  <section className="flex flex-1 bg-gray-800 border-gray-700 border rounded rounded-tl-none">
     {children}
   </section>
 )
