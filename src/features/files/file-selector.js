@@ -2,7 +2,7 @@ import React from 'react'
 
 const files = [
   {
-    name: 'Warrior 1',
+    name: 'Warrior 1 with a really long name',
     icon: <img src="https://placekitten.com/32/32" alt="kitty" className="rounded-full" />,
     active: true
   },
@@ -15,18 +15,18 @@ const files = [
 
 const File = ({ file }) => (
   <li
-    className={`h-12 flex flex-row items-center text-gray-100 rounded-l-full text-sm px-2 ${
+    className={`h-16 flex flex-row items-center text-gray-100 rounded-l-full text-sm px-2 ${
       file.active && 'bg-gray-700 '
     }`}
   >
-    <div className="w-8 h-8 mr-2">{file.icon}</div>
+    <div className="w-8 h-8 mx-2">{file.icon}</div>
     <span className="flex-1">{file.name}</span>
-    <input type="checkbox" className="h-4 w-4 border border-gray-700"></input>
+    <input type="checkbox" className="h-4 w-4 ml-2 border border-gray-700"></input>
   </li>
 )
 
 const FileSelector = () => (
-  <ul className="w-64">
+  <ul className="w-72">
     {files.map((f) => (
       <File file={f}></File>
     ))}
