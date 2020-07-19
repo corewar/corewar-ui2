@@ -31,7 +31,7 @@ function App() {
         <Header></Header>
         <TabRow>
           {routes.map((r) => (
-            <Tab route={r} />
+            <Tab key={r.to} route={r} />
           ))}
         </TabRow>
         <Body>

@@ -28,14 +28,18 @@ const CoreInspector = () => (
   <section className="mt-40 flex-1 p-8">
     <table className="text-sm w-full text-right">
       <thead className="font-semibold h-12">
-        <td>Address</td>
-        <td>Instruction</td>
-        <td>A Operand</td>
-        <td>B Operand</td>
+        <tr>
+          <td>Address</td>
+          <td>Instruction</td>
+          <td>A Operand</td>
+          <td>B Operand</td>
+        </tr>
       </thead>
-      {data.map((d) => (
-        <MemoryAddress command={d} />
-      ))}
+      <tbody>
+        {data.map((d) => (
+          <MemoryAddress command={d} />
+        ))}
+      </tbody>
     </table>
   </section>
 )

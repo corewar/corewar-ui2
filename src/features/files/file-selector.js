@@ -3,12 +3,12 @@ import React from 'react'
 const files = [
   {
     name: 'Warrior 1',
-    icon: <img src="https://placekitten.com/32/32" className="rounded-full" />,
+    icon: <img src="https://placekitten.com/32/32" alt="kitty" className="rounded-full" />,
     active: true
   },
   {
     name: 'Warrior 2',
-    icon: <img src="https://placekitten.com/32/32" className="rounded-full" />,
+    icon: <img src="https://placekitten.com/32/32" alt="kitty" className="rounded-full" />,
     active: false
   }
 ]

@@ -7,9 +7,9 @@ const MatchResults = () => (
   <section className="h-48">
     <h2 className="font-bold text-lg text-gray-200">Match Results</h2>
     <div className="flex justify-between mt-2">
-      <img src="https://placekitten.com/32/32" />
+      <img src="https://placekitten.com/32/32" alt="kitty" />
       <span>vs</span>
-      <img src="https://placekitten.com/32/32" />
+      <img src="https://placekitten.com/32/32" alt="kitty" />
     </div>
     <ThreeWay scores={scores}></ThreeWay>
   </section>
