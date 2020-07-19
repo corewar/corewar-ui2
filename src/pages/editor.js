@@ -1,11 +1,15 @@
 import React from 'react'
 import FileManager from '../features/files/file-manager'
-import Wrapper from '../features/simulator/wrapper'
+import CoreInspector from '../features/simulator/core-inspector'
+import Simulator from '../features/simulator/simulator'
 
 const Editor = () => (
   <>
     <FileManager></FileManager>
-    <Wrapper></Wrapper>
+    <section className="w-3/5 flex flex-row">
+      <CoreInspector></CoreInspector>
+      <Simulator></Simulator>
+    </section>
   </>
 )
 

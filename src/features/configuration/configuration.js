@@ -8,7 +8,7 @@ import BigRedButton from './big-red-button'
 const Configuration = () => (
   <>
     <FileButton>Open</FileButton>
-    <div className="mt-4 p-4 bg-gray-700 rounded-lg">
+    <div className="mt-2 p-4 bg-gray-700 rounded-lg">
       <h2 className="text-lg font-bold mb-8 border border-t-0 border-l-0 border-r-0 border-gray-600 pb-2">
         Configuration
       </h2>
