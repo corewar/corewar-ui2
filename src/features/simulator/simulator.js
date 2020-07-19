@@ -4,7 +4,7 @@ import Core from './core'
 import Progress from './progress'
 
 const Simulator = () => (
-  <section className="w-core flex flex-1 flex-col justify-between">
+  <section className="w-core flex flex-1 flex-col justify-between items-end">
     <Progress></Progress>
     <SimulatorControls></SimulatorControls>
     <Core></Core>

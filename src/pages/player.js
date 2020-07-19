@@ -13,7 +13,7 @@ const Player = () => (
       <MatchResults></MatchResults>
       <OverallResults></OverallResults>
     </div>
-    <div className="w-2/5 ml-2">
+    <div className="w-2/5 ml-2 flex flex-end">
       <Simulator></Simulator>
     </div>
   </>
