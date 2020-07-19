@@ -2,7 +2,7 @@ import React from 'react'
 
 const MatchResults = () => (
   <section>
-    <h2 className="font-bold text-lg">Match Results</h2>
+    <h2 className="font-bold text-lg text-gray-200">Match Results</h2>
     <div className="flex justify-between mt-2">
       <img src="https://placekitten.com/32/32" /> <span>vs</span>
       <img src="https://placekitten.com/32/32" />

@@ -1,8 +1,16 @@
 import React from 'react'
 
 const files = [
-  { name: 'Warrior 1', icon: 'ico', active: true },
-  { name: 'Warrior 2', icon: 'ico', active: false }
+  {
+    name: 'Warrior 1',
+    icon: <img src="https://placekitten.com/32/32" className="rounded-full" />,
+    active: true
+  },
+  {
+    name: 'Warrior 2',
+    icon: <img src="https://placekitten.com/32/32" className="rounded-full" />,
+    active: false
+  }
 ]
 
 const File = ({ file }) => (
@@ -11,7 +19,7 @@ const File = ({ file }) => (
       file.active && 'bg-gray-700 '
     }`}
   >
-    <div className="w-8 h-8">{file.icon}</div>
+    <div className="w-8 h-8 mr-2">{file.icon}</div>
     <span className="flex-1">{file.name}</span>
     <input type="checkbox" className="h-4 w-4 border border-gray-700"></input>
   </li>
