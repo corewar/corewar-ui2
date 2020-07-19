@@ -9,11 +9,11 @@ const Player = () => (
     <div className="w-1/5 h-full mr-2">
       <Configuration></Configuration>
     </div>
-    <div className="w-2/5 flex flex-col justify-start px-4">
+    <div className="flex flex-col flex-1 justify-start px-4">
       <MatchResults></MatchResults>
       <OverallResults></OverallResults>
     </div>
-    <div className="w-2/5 ml-2 flex flex-end">
+    <div className="ml-2 flex">
       <Simulator></Simulator>
     </div>
   </>
