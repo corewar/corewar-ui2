@@ -1,4 +1,10 @@
 import React from 'react'
+import ThreeWay from './three-way'
+
+const scores = [
+  [{ colour: 'bg-red-500' }, { colour: 'bg-blue-500' }],
+  [{ colour: 'bg-green-500' }, { colour: 'bg-purple-500' }]
+]
 
 const OverallResults = () => (
   <section>
@@ -17,7 +23,9 @@ const OverallResults = () => (
           <img src="https://placekitten.com/32/32" className="rounded-full" />
         </td>
         <td>Blur scanner</td>
-        <td></td>
+        <td>
+          <ThreeWay scores={scores[0]}></ThreeWay>
+        </td>
       </tr>
       <tr className="h-16">
         <td>2</td>
@@ -25,7 +33,9 @@ const OverallResults = () => (
           <img src="https://placekitten.com/32/32" className="rounded-full" />
         </td>
         <td>Looping paper</td>
-        <td></td>
+        <td>
+          <ThreeWay scores={scores[1]}></ThreeWay>
+        </td>
       </tr>
     </table>
   </section>

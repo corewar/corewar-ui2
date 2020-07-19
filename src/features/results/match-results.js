@@ -1,12 +1,7 @@
 import React from 'react'
+import ThreeWay from './three-way'
 
-const ThreeWay = () => (
-  <div className="flex">
-    <div className="w-2/5 h-6 mt-2 bg-red-700 rounded rounded-r-none"></div>
-    <div className="w-1/5 h-6 mt-2 bg-gray-100"></div>
-    <div className="w-3/5 h-6 mt-2 bg-blue-700 rounded rounded-l-none"></div>
-  </div>
-)
+const scores = [{ colour: 'bg-red-500' }, { colour: 'bg-blue-500' }]
 
 const MatchResults = () => (
   <section className="h-48">
@@ -16,7 +11,7 @@ const MatchResults = () => (
       <span>vs</span>
       <img src="https://placekitten.com/32/32" />
     </div>
-    <ThreeWay></ThreeWay>
+    <ThreeWay scores={scores}></ThreeWay>
   </section>
 )
 
