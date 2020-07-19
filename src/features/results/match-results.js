@@ -1,17 +1,22 @@
 import React from 'react'
 
+const ThreeWay = () => (
+  <div className="flex">
+    <div className="w-2/5 h-6 mt-2 bg-red-700 rounded rounded-r-none"></div>
+    <div className="w-1/5 h-6 mt-2 bg-gray-100"></div>
+    <div className="w-3/5 h-6 mt-2 bg-blue-700 rounded rounded-l-none"></div>
+  </div>
+)
+
 const MatchResults = () => (
-  <section>
+  <section className="h-48">
     <h2 className="font-bold text-lg text-gray-200">Match Results</h2>
     <div className="flex justify-between mt-2">
-      <img src="https://placekitten.com/32/32" /> <span>vs</span>
+      <img src="https://placekitten.com/32/32" />
+      <span>vs</span>
       <img src="https://placekitten.com/32/32" />
     </div>
-    <div className="flex">
-      <div className="w-2/5 h-6 mt-2 bg-red-700 rounded rounded-r-none"></div>
-      <div className="w-1/5 h-6 mt-2 bg-gray-100"></div>
-      <div className="w-3/5 h-6 mt-2 bg-blue-700 rounded rounded-l-none"></div>
-    </div>
+    <ThreeWay></ThreeWay>
   </section>
 )
 
