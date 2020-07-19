@@ -1,9 +1,10 @@
 import React from 'react'
+import Configuration from '../features/configuration/configuration'
 import Simulator from '../features/simulator/simulator'
 
 const Player = () => (
   <>
-    <h1>I are the player</h1>
+    <Configuration></Configuration>
     <div className="w-1/4">
       <Simulator></Simulator>
     </div>

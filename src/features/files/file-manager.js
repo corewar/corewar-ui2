@@ -4,7 +4,7 @@ import FileSelector from './file-selector'
 import CodeEditor from './code-editor'
 
 const FileManager = () => (
-  <section className="w-2/5 m-2 flex flex-col">
+  <section className="w-2/5 flex flex-col">
     <div className="w-full">
       <FileButton>New</FileButton>
       <FileButton>Load</FileButton>
