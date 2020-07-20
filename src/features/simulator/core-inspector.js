@@ -37,7 +37,7 @@ const CoreInspector = () => (
       </thead>
       <tbody>
         {data.map((d) => (
-          <MemoryAddress command={d} />
+          <MemoryAddress command={d} key={d.address} />
         ))}
       </tbody>
     </table>

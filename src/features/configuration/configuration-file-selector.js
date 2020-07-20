@@ -25,12 +25,12 @@ const File = ({ file }) => (
   </li>
 )
 
-const FileSelector = () => (
+const ConfigurationFileSelector = () => (
   <ul className="mb-12">
     {files.map((f) => (
-      <File file={f}></File>
+      <File file={f} key={f.name}></File>
     ))}
   </ul>
 )
 
-export default FileSelector
+export default ConfigurationFileSelector
