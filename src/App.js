@@ -14,13 +14,11 @@ import 'typeface-anonymous-pro'
 const routes = [
   {
     to: '/editor',
-    name: 'Editor',
-    active: true
+    name: 'Editor'
   },
   {
     to: '/player',
-    name: 'Player',
-    active: false
+    name: 'Player'
   }
 ]
 
