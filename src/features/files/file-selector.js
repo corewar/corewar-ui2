@@ -26,7 +26,7 @@ const File = ({ file }) => (
 )
 
 const FileSelector = () => (
-  <ul className="w-72">
+  <ul className="w-84">
     {files.map((f) => (
       <File file={f} key={f.name}></File>
     ))}

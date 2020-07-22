@@ -25,14 +25,14 @@ const MemoryAddress = ({ command }) => (
 )
 
 const CoreInspector = () => (
-  <section className="mt-40 flex-1 p-8">
-    <table className="text-sm w-full text-right">
+  <div className="h-core flex">
+    <table className="w-full text-sm text-right table-fixed">
       <thead className="font-semibold h-12">
         <tr>
-          <td>Address</td>
-          <td>Instruction</td>
-          <td>A Operand</td>
-          <td>B Operand</td>
+          <td className="w-16">Address</td>
+          <td className="w-20">Instruction</td>
+          <td className="w-24">A Operand</td>
+          <td className="w-24">B Operand</td>
         </tr>
       </thead>
       <tbody>
@@ -41,7 +41,7 @@ const CoreInspector = () => (
         ))}
       </tbody>
     </table>
-  </section>
+  </div>
 )
 
 export default CoreInspector

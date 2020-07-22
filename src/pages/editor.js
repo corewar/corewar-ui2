@@ -5,9 +5,13 @@ import Simulator from '../features/simulator/simulator'
 
 const Editor = () => (
   <>
-    <FileManager></FileManager>
-    <section className="w-3/5 flex flex-row">
-      <CoreInspector></CoreInspector>
+    <section className="w-1/2 flex flex-col">
+      <FileManager></FileManager>
+    </section>
+    <section className="w-1/2 flex flex-row justify-end">
+      <section className="flex flex-col justify-end pr-2">
+        <CoreInspector></CoreInspector>
+      </section>
       <Simulator></Simulator>
     </section>
   </>
