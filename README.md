@@ -1,68 +1,42 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Corewar App
 
-## Available Scripts
+This project is a web app for Corewar.io
 
-In the project directory, you can run:
+It specifically consumes [Corewar](https://github.com/corewar/corewar.io/tree/master/packages/corewar) which is a Typescript / Javascript implementation of the classic game [corewar](https://en.wikipedia.org/wiki/Core_War) to provide parser and simulator functionality.
 
-### `npm start`
+You can use the website here [https://www.corewar.io](https://www.corewar.io/)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technology
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+This project is bootstrapped through create-react-app.
 
-### `npm test`
+- [tailwindcss](https://tailwindcss.com/) for the styling
+- typefaces for self hosted fonts
+- react-testing-library for the tests
+- Redux and redux-saga for interactive elements and state management
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Architectural approach
 
-### `npm run build`
+The project root is `App.js` which brings in the routing, main tailwind styling and app level depedencies like typefaces.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The `App.js` imports all the `app-chrome` for things like header, navigation etc and this is kept outside of everything dynamic.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+The `App.js` contains a body which is where all the `pages` are rendered into.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The app is organised into `pages` which roughly map 1-1 to routes, so `/editor` will render `pages/editor.js` kind of borrowing he idea from things like Next.
 
-### `npm run eject`
+The pages are responsible for pulling in `features` and composing them into a single page. Features can be re-used between pages. The pages are responsible for applying page level layout to components such as widths, heights, positions and margins and paddings to compose the desired output. `features` do have some layout responsiblities etc but as a rule these are applied internally.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Getting started
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Clone the project
+- `npm i` the dependencies
+- `npm start` to run the webserver and visit `localhost:3000` to see the output
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Testing
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Run `npm test` to execute the UI tests
 
-## Learn More
+## Contribution
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+We welcome all contributions, feedback and issues, please drop us a line with any feedback you have.
