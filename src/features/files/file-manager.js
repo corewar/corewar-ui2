@@ -5,7 +5,7 @@ import CodeEditor from './code-editor'
 
 const FileManager = () => (
   <>
-    <div className="w-full py-2">
+    <div className="w-full">
       <FileButton>New</FileButton>
       <FileButton>Load</FileButton>
     </div>
