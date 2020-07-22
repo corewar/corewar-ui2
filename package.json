@@ -24,9 +24,7 @@
     "test": "react-scripts test --env=jsdom",
     "coverage": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject",
-    "build:style": "tailwind build src/global/styles.css -o src/global/tailwind.css",
-    "prebuild": "npm run build:style",
-    "prestart": "npm run build:style"
+    "build:style": "tailwind build src/global/styles.css -o src/global/tailwind.css"
   },
   "eslintConfig": {
     "extends": "react-app"
