@@ -1,11 +1,12 @@
 import React from 'react'
 import ThreeWay from './three-way'
+import SectionHeader from '../../app-chrome/section-header'
 
 const scores = [{ colour: 'bg-red-500' }, { colour: 'bg-blue-500' }]
 
 const MatchResults = () => (
   <section className="h-48">
-    <h2 className="font-bold text-lg text-gray-200">Match Results</h2>
+    <SectionHeader>Match Results</SectionHeader>
     <div className="flex justify-between mt-2">
       <img src="https://placekitten.com/32/32" alt="kitty" />
       <span>vs</span>

@@ -1,4 +1,5 @@
 import React from 'react'
+import SectionHeader from '../../app-chrome/section-header'
 
 const data = [
   {
@@ -25,8 +26,9 @@ const MemoryAddress = ({ command }) => (
 )
 
 const CoreInspector = () => (
-  <div className="h-core flex">
-    <table className="w-full text-sm text-right table-fixed">
+  <div className="h-core flex flex-col">
+    <SectionHeader>Core Inspector</SectionHeader>
+    <table className="w-full text-sm text-right table-fixed mt-4">
       <thead className="font-semibold h-12">
         <tr>
           <td className="w-16">Address</td>

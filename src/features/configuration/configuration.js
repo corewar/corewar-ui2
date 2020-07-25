@@ -4,19 +4,16 @@ import RadioToggle from './radio-toggle'
 import NumberHotStepper from './number-hot-stepper'
 import ConfigurationFileSelector from './configuration-file-selector'
 import BigRedButton from './big-red-button'
+import SectionHeaderUnderlined from '../../app-chrome/section-header-underlined'
 
 const Configuration = () => (
   <>
     <FileButton>Open</FileButton>
     <div className="mt-2 p-4 bg-gray-700 rounded-lg">
-      <h2 className="text-lg font-bold mb-8 border border-t-0 border-l-0 border-r-0 border-gray-600 pb-2">
-        Configuration
-      </h2>
+      <SectionHeaderUnderlined>Configuration</SectionHeaderUnderlined>
       <RadioToggle></RadioToggle>
       <NumberHotStepper></NumberHotStepper>
-      <h2 className="text-lg font-bold mt-10 mb-4 border border-t-0 border-l-0 border-r-0 border-gray-600 pb-2">
-        Warriors
-      </h2>
+      <SectionHeaderUnderlined>Warriors</SectionHeaderUnderlined>
       <ConfigurationFileSelector></ConfigurationFileSelector>
       <BigRedButton></BigRedButton>
     </div>
